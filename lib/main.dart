@@ -13,9 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Gym App',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepPurple),
-        // useMaterial3: true, // Não é mais necessário no Flutter 2.5.0 e superior
-      ),
+          // colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.red,
+          // useMaterial3: true, // Não é mais necessário no Flutter 2.5.0 e superior
+          ),
       home: const GymBrowser(),
     );
   }
@@ -53,7 +53,7 @@ class _GymBrowserState extends State<GymBrowser> {
       body: Column(
         children: [
           Visibility(
-            visible: true, // Define o widget como invisível
+            visible: false, // Define o widget como invisível
             child: Positioned(
               top: 20, // Define a posição do topo
               left: 20, // Define a posição da esquerda
@@ -76,7 +76,6 @@ class _GymBrowserState extends State<GymBrowser> {
           Expanded(
             child: Container(
               decoration: BoxDecoration(
-                border: Border.all(color: Colors.blue, width: 1.0),
                 borderRadius: BorderRadius.circular(4.0),
               ),
               child: WebView(

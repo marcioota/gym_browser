@@ -131,7 +131,7 @@ class _GymBrowserState extends State<GymBrowser> {
             ),
           ),
           Visibility(
-            visible: true, // Define o widget como invisível
+            visible: false, // Define o widget como invisível
             child: ElevatedButton(
               onPressed: () {
                 _webViewController.reload();

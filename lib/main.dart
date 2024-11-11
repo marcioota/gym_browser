@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Atlas Coach Center',
+      title: 'Atlas Coach Center-Personal',
       theme: ThemeData(
           // colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.red,
           // useMaterial3: true, // Não é mais necessário no Flutter 2.5.0 e superior
@@ -86,7 +86,7 @@ class _GymBrowserState extends State<GymBrowser> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Atlas Coach Center'),
+        title: const Text('Atlas Coach Center-Personal'),
         backgroundColor: Colors.black,
         foregroundColor: Colors.amber,
         toolbarHeight: 30,
@@ -119,7 +119,7 @@ class _GymBrowserState extends State<GymBrowser> {
                 borderRadius: BorderRadius.circular(4.0),
               ),
               child: WebView(
-                initialUrl: 'https://gym-aluno.atlascoachcenter.com.br',
+                initialUrl: 'https://gym-personal.atlascoachcenter.com.br',
                 javascriptMode: JavascriptMode.unrestricted,
                 onWebViewCreated: (WebViewController webViewController) {
                   _webViewController = webViewController;
